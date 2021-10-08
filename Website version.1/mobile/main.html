@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Sanae Projectのウェブサイト!</title>
+<meta charset="UTF-8">
+<meta name="auther" content="SanaeProject">
+<meta name="viewport" content="width=550px">
+<meta http-equiv="default-style" content="main">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="http://sanae.starfree.jp/">
+<link rel="icon" href="main.bmp" sizes="32x32">
+<link rel="icon" href="main.bmp" sizes="192x192">
+<link rel="next" href="http://sanae.starfree.jp/">
+<link rel="apple-touch-icon-precomposed" href="main.bmp">
+<link rel="stylesheet" href="main.css" title="main" type="text/css">
+<link rel="prev" href="mobile/window.html">
+<!--loading-->
+<script type="text/javascript" src="first.js" async></script>
+<img id="logo" style="opacity:1;visibility:hidden;position:absolute; top: 30%;left: 50%;transform: translate(-50%,-50%);" src="pic/logo.png"></img>
+<img id="wait1" style="opacity:1;position:absolute;top: 67%;left: 20%;" src="pic/wait.png"><img>
+<img id="wait2" style="opacity:0.5;position:absolute;top: 67%;left: 40%;" src="pic/wait.png"><img>
+<img id="wait3" style="opacity:0.3;position:absolute;top: 67%;left: 60%;" src="pic/wait.png"><img>
+<img id="wait4" style="opacity:0.2;position:absolute;top: 67%;left: 80%;" src="pic/wait.png"><img>
+<!---->
+</head>
+<body id="mainframe" onload="toend()">
+<!--button-->
+<div id="button" style="z-index:100;opacity:0;" onclick="openwindow()" onmouseover="over()" onmouseout="out()">
+<h1 id="buttonL" style="position:absolute;top:-15px;left: 40%;transform:scale(1.4) rotateZ(30deg);"><span style="font-family: arial;">/</span></h1><h1 id="buttonR" style="position:absolute;top:-15px;left: 40%;transform:scale(1.4) rotateZ(-30deg);"><span style="font-family: arial;">&#92;</span></h1>
+</div>
+<iframe id="window" style="z-index:10;opacity=1;position:fixed;top:0px;left:100%;background-color:rgba(0,0,0,0.7);background-blend-mode:color;width:100%;height:100%;" src="window.html"></iframe>
+<!---->
+<noscript><div style="z-index:100;"><font color="red">Javascriptの許可がありません。適切に動作しません。</font></div></noscript>
+<script type="text/javascript" src="main.js"></script>
+<!--content1-->
+<div id="content1" style="position:absolute;top:10px;opacity:0;">
+<p><h2>・SanaeProjectについて</h2></p>
+Sanae Projectは様々なプログラミング言語を<br>学習し共有・情報収集するのが目的です。<br>
+その他にもゲーム作成など学習した内容を使用・探求する<br>などが目的となっています。<br>
+<hr><font size="3">※配布したプログラムをダウンロードした時点で<a href="http://sanae.starfree.jp/help/?program=use">利用規約</a>に同意したものとします。</font>
+</div>
+<!--content2-->
+<div id="content2" style="position:absolute;top:300px;opacity:0;height:370px;">
+<p><h2>プログラミング言語</h2></p>
+学習してる言語はこちらです:<br>
+C++/C,java,Python,Html,JS,CSS<br>
+<font color="red">※現在スマートフォン用(Android)の開発はしていません。</font>
+<hr>
+<p><h2>プログラミング学習</h2></p>
+<iframe title="programmingdaily" style="position:relative;top:-20px;border:none;" src="http://sanae.starfree.jp/dailyprogram.html" width="500px" height="150px"></iframe>
+</div>
+<!--content3-->
+<div id="content3" style="position:absolute;top:720px;opacity:0;">
+<p><h2>変更</h2></p>
+<iframe title="report" style="border:none;" src="http://sanae.starfree.jp/report.html" width="500px" height="130px"></iframe>
+</div>
+<!--content4-->
+<div id="content4" style="left:0px;width:100%;position:absolute;top:1000px;opacity:0;">
+<font color="#969696">[ウサギ大好き人間]<br>
+主な使用言語:C++言語<br>
+・プログラミング超初心者<br>
+[サイト]<br>
+使用言語:Javascript,HTML,CSS<br>
+</font>
+<hr>
+<small>Copyright 2021 SanaeProject&PPPtalProject.ALL Rights Reserved.</small>
+</div>
+</body>
+</html>

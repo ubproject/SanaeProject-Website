@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Program配布コーナー</title>
+<meta charset="UTF-8">
+<meta name="auther" content="SanaeProject">
+<meta name="robots" content="noindex,follow">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="http://sanae.starfree.jp/">
+<link rel="next" href="main.html">
+<style>
+input:hover{
+border-style:dashed;
+border-color:#ff0000;
+border-radius:10px 10px;
+}
+</style>
+</head>
+<body>
+<input id="programs4" type="image" width="170" src="softpic/soft4.webp" alt="プログラムをダウンロードする。" onclick="window.open('https://drive.google.com/file/d/1LerBKvW5pFjLdZR0_yCpEvHAYx2_57uu/view?usp=sharing', '_blank');">
+<input id="programs1" type="image" width="170" src="softpic/soft1.webp" alt="プログラムをダウンロードする。" onclick="window.open('https://drive.google.com/file/d/15MHpd7FczXMZSqumGf5QUchpmRv02L7p/view?usp=sharing', '_blank');">
+<input id="programs2" type="image" height="120" width="170" src="softpic/soft2.webp" alt="プログラムをダウンロードする。"onclick="window.open('https://drive.google.com/file/d/1ypI2TiorliXnEfJywXot0sjE9MFJIZiu/view?usp=sharing', '_blank');">
+<input id="programs3" type="image" height="120" width="170" src="softpic/soft3.webp" alt="プログラムをダウンロードする。"onclick="window.open('https://drive.google.com/file/d/1LIBn99KNih35CIK-bdKcphot4UBrfAzh/view?usp=sharing', '_blank');">
+<script type="text/javascript">
+const programs1 = document.getElementById('programs1');
+const programs2 = document.getElementById('programs2');
+const programs3 = document.getElementById('programs3');
+const programs4 = document.getElementById('programs4');
+programs1.addEventListener('mouseover', () => {
+　　programs1.src="softpic/down.png";
+}, false);
+    programs1.addEventListener('mouseleave', () => {
+　　programs1.src = 'softpic/soft1.webp';
+}, false);
+
+programs2.addEventListener('mouseover', () => {
+　　programs2.src="softpic/down.png";
+}, false);
+programs2.addEventListener('mouseleave', () => {
+　　programs2.src = 'softpic/soft2.webp';
+}, false);
+
+programs3.addEventListener('mouseover', () => {
+　　programs3.src="softpic/down.png";
+}, false);
+programs3.addEventListener('mouseleave', () => {
+　　programs3.src = 'softpic/soft3.webp';
+}, false);
+
+programs4.addEventListener('mouseover', () => {
+　　programs4.src="softpic/down.png";
+}, false);
+programs4.addEventListener('mouseleave', () => {
+　　programs4.src = 'softpic/soft4.webp';
+}, false);
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Sanae Projectのウェブサイト！</title>
+<!--サイト詳細設定-->
+<meta charset="UTF-8">
+<meta name="auther" content="SanaeProject">
+<meta name="description" content="Sanae Projectのホームページです。当サイトではSanaeProjectの活動内容や目的などを紹介していきます。そのほかにもプログラミングの学習した記録も残していきます。">
+<meta name="keywords" content="sanae,project">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="default-style" content="main">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<!--サイトの関係-->
+<link rel="icon" href="main.bmp" sizes="32x32">
+<link rel="icon" href="main.bmp" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="main.bmp">
+<link rel="stylesheet" href="main.css" title="main" type="text/css">
+<link rel="prev" href="programs.html">
+<link rel="prev" href="help/help.html">
+<link rel="prev" href="home/">
+<link rel="prev" href="404.html">
+<link rel="prev" href="mobile/window.html">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="http://sanae.starfree.jp/">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="mobile/" />
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="firstpageload();">
+<!--javascriptが使用できない場合-->
+<noscript><div style="position:absolute;top:10%;z-index:100;"><font color="red"><h2>※JavaScriptが無効になっています。このWebページは正しく動作しません。</h2></font></div></noscript>
+<!--ヘッダ-->
+<header id="header">　<a href="">・HOME</a>　|　<a target="_blank" href="help/">ヘルプ</a></header>
+<header id="header2">　<a onclick="scrollgo(0);">・トップ</a>　|　<a onclick="scrollgo(10);">・プロジェクトについて</a>　|　<a onclick="scrollgo(250);">・扱っている言語</a><br>　<a onclick="scrollgo(450);">・配布プログラム</a>　|　<a target="_blank" href="help/">・ヘルプ</a></header>
+<!--button-->
+<div id="button" style="z-index:110;opacity:1;" onclick="openwindow()" onmouseover="over()" onmouseout="out()">
+<h1 id="buttonL" style="position:absolute;top:-15px;left: 40%;transform:scale(1.4) rotateZ(30deg);"><span style="font-family: arial;">/</span></h1><h1 id="buttonR" style="position:absolute;top:-15px;left: 40%;transform:scale(1.4) rotateZ(-30deg);"><span style="font-family: arial;">&#92;</span></h1>
+</div>
+<iframe id="window" style="z-index:100;opacity=1;position:fixed;top:0px;left:100%;background-color:rgba(0,0,0,0.7);background-blend-mode:color;width:100%;height:100%;" src="mobile/window.html"></iframe>
+<!---->
+<!--SanaeProjectについて-->
+<div id="one" class="window1">
+<p><h2 id="sectionone">SanaeProjectについて</h2></p>
+Sanae Projectは様々なプログラミング言語を<br>学習し共有・情報収集するのが目的です。<br>
+その他にもゲーム作成など学習した内容を使用・探求する<br>などが目的となっています。<br>
+<hr><font size="3">※配布したプログラムをダウンロードした時点で<a href="help/?program=use">利用規約</a>に同意したものとします。</font>
+</div>
+<!--プログラミング言語紹介-->
+<div id="two" class="window1">
+<h2 id="sectionone">プログラミング言語</h2>
+学習している言語は以下の通りです:<br>
+C++/C,Java,Python,Html,Javascript,CSS<br>
+<hr>
+その他にもArduinoやJavaのServlet,Jspもたまに使用します。<br>
+</div>
+<!--仕切り&配布プログラム-->
+<div id="three">
+<h2 id="sectiontwo" style="position:relative;top:-10px;">配布プログラム</h2>
+<iframe title="programs" id="programs" style="position:relative;top:-20px;" src="programs.html" width="100%" height="140px"></iframe>
+</div>
+<!--プログラミング学習記録-->
+<div id="four" class="window2">
+<h2 id="sectiontwo">プログラミング学習記録</h2>
+<iframe title="programmingdaily" style="position:relative;top:-20px;" src="dailyprogram.html" width="500px" height="150px"></iframe>
+</div>
+<!--サイト変更点-->
+<div id="five" class="window2">
+<h2 id="sectiontwo">変更</h2>
+<iframe title="report" src="report.html" width="500px" height="130px"></iframe>
+</div>
+<!--自己紹介-->
+<div id="endcontents">
+<font color="#969696">[ウサギ大好き人間]<br>
+主な使用言語:C++言語<br>
+・プログラミング超初心者<br>
+[サイト]<br>
+使用言語:Javascript,HTML,CSS
+</font>
+</div>
+<!--フッター-->
+<footer id="fo"><small>Copyright 2021 SanaeProject&PPPtalProject.ALL Rights Reserved.</small></footer>
+<!--スクロール量に応じてヘッダーを変更-->
+<script>scroll();</script>
+</body>
+</html>

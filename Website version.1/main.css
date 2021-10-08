@@ -1,0 +1,161 @@
+body{
+width:630px;
+background-color:black;
+background-image:url("back.webp");
+background-attachment:fixed;
+background-position:center top;
+background-size:99%;
+height:2000px;
+}
+a{
+color:#ffff00;
+}
+a:link{color:#00ffff;}
+a:visited{color:#ffff00;}
+a:hover{color:#ffffff;}
+div{
+border:2px solid #c8c8c8;
+border-radius:5px 5px;
+background-color:white;
+left:30px;
+width:100%;
+}
+.window1:hover{
+border:2px solid #ffff00;
+border-radius:8px 8px;
+}
+.window2:hover{
+border:3px solid #00ffff;
+border-radius:8px 8px;
+}
+@keyframes headerbye{
+0%{top:0px;}
+100%{top:-40%;}
+}
+@keyframes headercome{
+0%{top:-40px;}
+100%{top:0%;}
+}
+header{
+background-image:url("header.webp");
+background-position:50%;
+position:fixed;
+left:0px;
+height:50px;
+top:0px;
+width:99.5%;
+border-style:solid;
+border-left-width:5px;
+border-top-width:0px;
+border-bottom-width:2px;
+border-left-color:#87d5ff;
+border-bottom-color:#0049ff;
+z-index:100;
+cursor:pointer;
+}
+#sectionone{
+border-style:solid;
+border-left-width:5px;
+border-top-width:0px;
+border-right-width:0px;
+border-left-color:#ffda00;
+border-bottom-color:#ff9100;
+}
+#sectiontwo{
+border-style:solid;
+border-left-width:5px;
+border-top-width:0px;
+border-right-width:0px;
+border-left-color:#87ceeb;
+border-bottom-color:#00bfff;
+}
+#one{
+position:absolute;
+top:50px;
+width:500px;
+}
+#two{
+position:absolute;
+top:300px;
+width:500px;
+}
+#three{
+border-style:solid;
+border-width:3px;
+border-top-color:#ffff1e;
+border-bottom-color:#00d9ff;
+border-left:none;
+border-right:none;
+position:absolute;
+top:510px;
+left:0;
+width:600px;
+height:200px;
+border-radius:0px 0px;
+}
+iframe{
+border:none;
+}
+#four{
+position:absolute;
+top:750px;
+width:500px;
+height:210px;
+}
+#five{
+position:absolute;
+top:1000px;
+width:500px;
+height:210px;
+}
+#endcontents{
+position:absolute;
+top:1300px;
+left:0px;
+border-left:none;
+border-radius:0px 0px;
+width:600px;
+}
+footer{
+position:absolute;
+left:0px;
+top:1990px;
+width:600px;
+border:2px solid #c8c8c8;
+border-radius:5px 5px;
+background-color:white;
+}
+#button{
+background-color:white;
+width:50px;
+height:50px;
+z-index:10;
+position:fixed;
+top:10px;
+left:90%;
+cursor:pointer;
+}
+@keyframes overL{
+0%{transform:scale(1.4) rotateZ(30deg);}
+100%{transform:scale(1.4) rotateZ(-13deg);}
+}
+@keyframes outL{
+0%{transform:scale(1.4) rotateZ(-13deg);}
+100%{transform:scale(1.4) rotateZ(30deg);}
+}
+@keyframes overR{
+0%{transform:scale(1.4) rotateZ(-30deg);}
+100%{transform:scale(1.4) rotateZ(13deg);}
+}
+@keyframes outR{
+0%{transform:scale(1.4) rotateZ(13deg);}
+100%{transform:scale(1.4) rotateZ(-30deg);}
+}
+@keyframes view{
+0%{position:fixed;left:100%;}
+100%{position:fixed;left:0px;}
+}
+@keyframes viewbye{
+0%{position:fixed;left:0px;}
+100%{position:fixed;left:100%;}
+}
